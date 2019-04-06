@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import linkedin from '../img/social/linkedin.svg'
 
 class Footer  extends React.Component {
@@ -11,14 +10,14 @@ class Footer  extends React.Component {
             <div className="columns">
               <div className="column is-4">
                 <section className="menu">
-                  <Link
+                  <a
                     className="has-text-white-ter"
-                    to="/admin"
+                    href="/admin/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                         Admin
-                  </Link>
+                  </a>
                 </section>
               </div>
               <div className="column is-4">
