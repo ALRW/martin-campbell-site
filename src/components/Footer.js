@@ -13,7 +13,7 @@ class Footer  extends React.Component {
                 <section className="menu">
                   <Link
                     className="has-text-white-ter"
-                    to="/admin/"
+                    to="/admin"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
