@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/site-logo.svg";
 
-const Navbar = class extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       active: false,
       navBarActiveClass: ""
-    };
+    }
   }
 
   toggleHamburger = () => {
@@ -61,32 +61,19 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                About
+                Services
               </Link>
               <Link className="navbar-item" to="/products">
-                Products
+                Property
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                People
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <Link className="navbar-item" to="/contact">
+                Contact us
+              </Link>
             </div>
           </div>
         </div>
