@@ -36,6 +36,53 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+          <section className="section">
+            <div className="columns has-text-centered">
+              <div className="column">
+                  <div style={{margin: '0 0 0 2rem'}} className="card">
+                    <div className="card-image">
+                      <figure className="image">
+                        <iframe style={{width: '100%'}} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeee6GzgMdkgRLQwSqRxEpYk&key=AIzaSyDUj8P_HbTNHDOHQGMuC3KSJNPr0pF-pwk" frameborder="0" alt="google map of richmond office">
+                        </iframe>
+                    </figure>
+                    </div>
+                      <div className="card-content">
+                        <div className="content">
+                          <h3>Richmond Office</h3>
+                          <address>
+                              6 Duke Street<br />
+                              Richmond<br />
+                              Surrey<br />
+                              TW9 1HP<br />
+                          </address>
+                          <p>Tel: 020 8940 2266</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div className="column">
+                <div style={{margin: '0 2rem 0 0'}} className="card">
+                  <div className="card-image">
+                    <figure className="image">
+                      <iframe style={{width: '100%'}} src="https://www.google.com/maps/embed/v1/place?q=Parc%20House%2C%2025-37%20Cowleaze%20Road%2C%20Kingston%20upon%20Thames%2C%20Surrey%2C%20KT2%206DZ&key=AIzaSyDUj8P_HbTNHDOHQGMuC3KSJNPr0pF-pwk" frameborder="0"></iframe>
+                    </figure>
+                  </div>
+                      <div className="card-content">
+                        <div className="content">
+                          <h3>Kingston Office</h3>
+                          <address>
+                              Parc House, 25-37 Cowleaze Road<br />
+                              Kingston Upon Thames<br />
+                              Surrey<br />
+                              KT2 6 DZ<br />
+                          </address>
+                          <p>Tel: 020 8547 0850</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </section>
         <section className="section">
           <div className="container">
             <div className="content">
