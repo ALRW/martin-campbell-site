@@ -39,10 +39,10 @@ export default class Index extends React.Component {
           <section className="section">
             <div className="columns has-text-centered">
               <div className="column">
-                  <div style={{margin: '0 0 0 2rem'}} className="card">
+                  <div className="card">
                     <div className="card-image">
                       <figure className="image">
-                        <iframe style={{width: '100%'}} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeee6GzgMdkgRLQwSqRxEpYk&key=AIzaSyDUj8P_HbTNHDOHQGMuC3KSJNPr0pF-pwk" frameborder="0" alt="google map of richmond office">
+                        <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeee6GzgMdkgRLQwSqRxEpYk&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0" alt="google map of richmond office">
                         </iframe>
                     </figure>
                     </div>
@@ -61,10 +61,10 @@ export default class Index extends React.Component {
                   </div>
             </div>
             <div className="column">
-                <div style={{margin: '0 2rem 0 0'}} className="card">
+                <div className="card">
                   <div className="card-image">
                     <figure className="image">
-                      <iframe style={{width: '100%'}} src="https://www.google.com/maps/embed/v1/place?q=Parc%20House%2C%2025-37%20Cowleaze%20Road%2C%20Kingston%20upon%20Thames%2C%20Surrey%2C%20KT2%206DZ&key=AIzaSyDUj8P_HbTNHDOHQGMuC3KSJNPr0pF-pwk" frameborder="0"></iframe>
+                      <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=Parc%20House%2C%2025-37%20Cowleaze%20Road%2C%20Kingston%20upon%20Thames%2C%20Surrey%2C%20KT2%206DZ&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0"></iframe>
                     </figure>
                   </div>
                       <div className="card-content">
