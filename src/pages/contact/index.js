@@ -36,127 +36,131 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-          <section className="section">
-            <div className="columns has-text-centered">
-              <div className="column">
-                  <div className="card">
-                    <div className="card-image">
-                      <figure className="image">
-                        <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeee6GzgMdkgRLQwSqRxEpYk&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0" alt="google map of richmond office">
-                        </iframe>
-                    </figure>
-                    </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <h3>Richmond Office</h3>
-                          <address>
-                              6 Duke Street<br />
-                              Richmond<br />
-                              Surrey<br />
-                              TW9 1HP<br />
-                          </address>
-                          <p>Tel: 020 8940 2266</p>
-                        </div>
-                      </div>
-                  </div>
-            </div>
+        <section className="section">
+          <div className="columns has-text-centered">
             <div className="column">
+              <section className="section">
                 <div className="card">
                   <div className="card-image">
                     <figure className="image">
-                      <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=Parc%20House%2C%2025-37%20Cowleaze%20Road%2C%20Kingston%20upon%20Thames%2C%20Surrey%2C%20KT2%206DZ&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0"></iframe>
+                      <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeee6GzgMdkgRLQwSqRxEpYk&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0" alt="google map of richmond office">
+                      </iframe>
                     </figure>
                   </div>
-                      <div className="card-content">
-                        <div className="content">
-                          <h3>Kingston Office</h3>
-                          <address>
-                              Parc House, 25-37 Cowleaze Road<br />
-                              Kingston Upon Thames<br />
+                  <div className="card-content">
+                    <div className="content">
+                      <h3>Richmond Office</h3>
+                      <address>
+                          6 Duke Street<br />
+                            Richmond<br />
                               Surrey<br />
-                              KT2 6 DZ<br />
-                          </address>
-                          <p>Tel: 020 8547 0850</p>
+                                TW9 1HP<br />
+                              </address>
+                              <p>Tel: 020 8940 2266</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </section>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1>Contact</h1>
-              <form
-                name="contact"
-                method="post"
-                action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit}
-              >
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'text'}
-                      name={'name'}
-                      onChange={this.handleChange}
-                      id={'name'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'email'}>
-                    Your email
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'email'}
-                      name={'email'}
-                      onChange={this.handleChange}
-                      id={'email'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'message'}>
-                    Tell us how we can help you
-                  </label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name={'message'}
-                      onChange={this.handleChange}
-                      id={'message'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <button className="button is-link is-warning" type="submit">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </Layout>
+                      </section>
+                    </div>
+                    <div className="column">
+                      <section className="section">
+                        <div className="card">
+                          <div className="card-image">
+                            <figure className="image">
+                              <iframe style={{width: '100%'}} src={`https://www.google.com/maps/embed/v1/place?q=Parc%20House%2C%2025-37%20Cowleaze%20Road%2C%20Kingston%20upon%20Thames%2C%20Surrey%2C%20KT2%206DZ&key=${process.env.GATSBY_GOOGLE_MAP_KEY}` }frameBorder="0"></iframe>
+                            </figure>
+                          </div>
+                          <div className="card-content">
+                            <div className="content">
+                              <h3>Kingston Office</h3>
+                              <address>
+                                  Parc House, 25-37 Cowleaze Road<br />
+                                    Kingston Upon Thames<br />
+                                      Surrey<br />
+                                        KT2 6 DZ<br />
+                                      </address>
+                                      <p>Tel: 020 8547 0850</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                        </section>
+                        <section className="section">
+                          <div className="container">
+                            <div className="content">
+                              <h1>Contact</h1>
+                              <form
+                                name="contact"
+                                method="post"
+                                action="/contact/thanks/"
+                                data-netlify="true"
+                                data-netlify-honeypot="bot-field"
+                                onSubmit={this.handleSubmit}
+                              >
+                                  {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                              <input type="hidden" name="form-name" value="contact" />
+                              <div hidden>
+                                <label>
+                                    Don’t fill this out:{' '}
+                                  <input name="bot-field" onChange={this.handleChange} />
+                                </label>
+                              </div>
+                              <div className="field">
+                                <label className="label" htmlFor={'name'}>
+                                    Your name
+                                </label>
+                                <div className="control">
+                                  <input
+                                    className="input"
+                                    type={'text'}
+                                    name={'name'}
+                                    onChange={this.handleChange}
+                                    id={'name'}
+                                    required={true}
+                                  />
+                                  </div>
+                                </div>
+                                <div className="field">
+                                  <label className="label" htmlFor={'email'}>
+                                      Your email
+                                  </label>
+                                  <div className="control">
+                                    <input
+                                      className="input"
+                                      type={'email'}
+                                      name={'email'}
+                                      onChange={this.handleChange}
+                                      id={'email'}
+                                      required={true}
+                                    />
+                                    </div>
+                                  </div>
+                                  <div className="field">
+                                    <label className="label" htmlFor={'message'}>
+                                        Tell us how we can help you
+                                    </label>
+                                    <div className="control">
+                                      <textarea
+                                        className="textarea"
+                                        name={'message'}
+                                        onChange={this.handleChange}
+                                        id={'message'}
+                                        required={true}
+                                      />
+                                      </div>
+                                    </div>
+                                    <div className="field">
+                                      <button className="button is-link is-warning" type="submit">
+                                          Send
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </section>
+                          </Layout>
     )
   }
 }
