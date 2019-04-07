@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MarkdownContent from './MarkdownContent'
-import Img from 'gatsby-image'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Services = ({ content }) => (
   <div className="columns is-multiline">
@@ -15,7 +15,7 @@ const Services = ({ content }) => (
               }}
             >
               <figure className="image">
-                <Img fluid={service.image.childImageSharp.fluid} alt={service.title} />
+                <PreviewCompatibleImage imageInfo={service} />
               </figure>
             </div>
           </div>

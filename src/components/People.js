@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const People = ({ people }) => (
   <div className="columns is-multiline">
@@ -9,7 +9,7 @@ const People = ({ people }) => (
         <section className="section">
           <div className="card">
             <div className="card-image">
-              <Img fluid={person.image.childImageSharp.fluid} alt={person.name} />
+              <PreviewCompatibleImage imageInfo={person} />
             </div>
             <div className="card-content">
               <h1 className="title">{person.name}</h1>

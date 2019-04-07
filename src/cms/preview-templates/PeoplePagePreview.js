@@ -9,7 +9,7 @@ const PeoplePagePreview = ({ entry }) => {
   return (
     <PeoplePageTemplate
       title={entry.getIn(['data', 'title'])}
-      services={people}
+      people={people}
     />
   )
 }
